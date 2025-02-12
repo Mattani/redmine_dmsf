@@ -26,7 +26,7 @@ class DmsfFilesController < ApplicationController
   before_action :find_revision, only: %i[delete_revision obsolete_revision]
   before_action :find_folder, only: %i[delete create_revision]
   before_action :authorize
-  before_action :permissions
+#  before_action :permissions
 
   accept_api_auth :show, :view, :delete, :create_revision
 
